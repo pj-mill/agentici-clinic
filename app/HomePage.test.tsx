@@ -25,7 +25,7 @@ describe('HomePage', () => {
     expect(markup).toContain('Meet the agents')
     expect(markup).toContain('Explore therapies')
     expect(markup).toContain('Book an appointment')
-    expect(markup.match(/Coming in the next phase/g)).toHaveLength(3)
+    expect(markup).toContain('href="/dashboard"')
   })
 
   it('uses responsive layout utilities for supported screen sizes', () => {

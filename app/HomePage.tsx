@@ -48,7 +48,7 @@ export default function HomePage() {
             <div className="mt-8 flex flex-wrap gap-4">
               <a
                 className="rounded-full bg-clinic-teal px-6 py-3 font-semibold text-white transition hover:bg-teal-800"
-                href="#care"
+                href="/dashboard"
               >
                 Find your care
               </a>
