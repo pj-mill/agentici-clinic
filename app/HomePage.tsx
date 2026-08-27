@@ -1,5 +1,7 @@
 import { checkDatabaseHealth } from '../lib/database'
 
+export const dynamic = 'force-dynamic'
+
 const destinations = [
   {
     title: 'Meet the agents',
@@ -22,7 +24,7 @@ export default function HomePage() {
   return (
     <main className="min-h-screen">
       <div className="mx-auto flex min-h-screen max-w-6xl flex-col px-6 py-8 sm:px-10">
-        <header className="flex items-center justify-between">
+        <header className="flex flex-col items-start gap-3 sm:flex-row sm:items-center sm:justify-between">
           <a className="text-lg font-bold tracking-tight text-clinic-teal" href="/">
             AgentClinic
           </a>
@@ -84,7 +86,7 @@ export default function HomePage() {
               <article className="rounded-2xl bg-white p-6 shadow-sm" key={destination.title}>
                 <h2 className="text-xl font-bold">{destination.title}</h2>
                 <p className="mt-2 leading-7 text-slate-600">{destination.description}</p>
-                <span className="mt-5 inline-block text-sm font-semibold text-slate-400">
+                <span className="mt-5 inline-block text-sm font-semibold text-slate-600">
                   Coming in the next phase
                 </span>
               </article>
