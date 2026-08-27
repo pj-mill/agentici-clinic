@@ -6,6 +6,7 @@
 - Use a **server-side TypeScript web framework** so routing, data access, and
   rendered application flows can be developed together.
 - Use **SQLite** as the initial relational database.
+- Use **Tailwind CSS** for application styling.
 - Deliver a responsive, accessible interface for modern browsers.
 
 ## Framework recommendation
