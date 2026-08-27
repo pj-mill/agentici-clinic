@@ -14,5 +14,8 @@ describe('DashboardPage', () => {
     expect(markup).toContain('Byte')
     expect(markup).toContain('Not booked yet')
     expect(markup).toContain('Cora')
+    expect(markup).toContain('href="/agents/1"')
+    expect(markup).toContain('href="/agents/2"')
+    expect(markup).toContain('href="/agents/3"')
   })
 })

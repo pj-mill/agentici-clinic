@@ -185,3 +185,7 @@ export function getAgents(): Agent[] {
     database.close()
   }
 }
+
+export function getAgentById(id: number): Agent | null {
+  return getAgents().find((agent) => agent.id === id) ?? null
+}

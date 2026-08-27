@@ -39,7 +39,11 @@ export default function DashboardPage() {
               <article className="rounded-2xl bg-white p-6 shadow-sm" key={agent.id}>
                 <div className="flex items-start justify-between gap-4">
                   <div>
-                    <h3 className="text-2xl font-bold">{agent.name}</h3>
+                    <h3 className="text-2xl font-bold">
+                      <a className="hover:text-clinic-teal hover:underline" href={`/agents/${agent.id}`}>
+                        {agent.name}
+                      </a>
+                    </h3>
                     <p className="mt-1 text-sm text-slate-600">{agent.kind}</p>
                   </div>
                   <span className="rounded-full bg-clinic-mist px-3 py-1 text-xs font-bold text-clinic-teal">
