@@ -15,6 +15,8 @@ appointments.
 - Present agent ailments and therapies clearly, without unnecessary complexity.
 - Provide appointment booking that is predictable and transparent.
 - Use an attractive, modern interface that works well in current browsers.
+- Make every core workflow usable across phone, tablet, and desktop screen
+  sizes through responsive design.
 
 ## Target audience
 
@@ -25,6 +27,6 @@ appointments.
 
 ## Definition of success
 
-An agent or staff member can open the dashboard, understand the current clinic
-state, locate relevant care information, and complete an appointment workflow
-with confidence.
+An agent or staff member can open the dashboard on any supported screen size,
+understand the current clinic state, locate relevant care information, and
+complete an appointment workflow with confidence.

@@ -7,7 +7,9 @@
   rendered application flows can be developed together.
 - Use **SQLite** as the initial relational database.
 - Use **Tailwind CSS** for application styling.
-- Deliver a responsive, accessible interface for modern browsers.
+- Use **Vitest** for automated tests and validation.
+- Deliver a responsive, accessible interface for modern browsers across phone,
+  tablet, and desktop screen sizes.
 
 ## Framework recommendation
 
@@ -21,8 +23,10 @@ application at the outset.
 - Keep domain rules and persistence logic separated from presentation.
 - Validate user-controlled input at the server boundary.
 - Prefer accessible HTML and progressive enhancement for core workflows.
+- Design mobile-first and use Tailwind responsive utilities for larger
+  viewports; do not require horizontal scrolling for core content.
 - Keep local development simple and reproducible.
-- Add automated coverage for appointment and other critical domain workflows as
+- Add Vitest coverage for appointment and other critical domain workflows as
   they are implemented.
 
 ## Evolution

@@ -8,8 +8,8 @@ This feature establishes the runnable AgentClinic foundation described in Phase
 - Configure a server-side TypeScript application using Next.js App Router.
 - Provide reproducible local development and validation commands.
 - Use Tailwind CSS for the application styling baseline.
-- Establish a responsive styling baseline with keyboard-accessible interaction
-  states.
+- Establish a mobile-first, responsive styling baseline that adapts to phone,
+  tablet, and desktop viewports with keyboard-accessible interaction states.
 - Add an in-memory SQLite health check that is visibly verifiable.
 - Create a minimal AgentClinic home page that introduces the clinic and links
   toward future care workflows.
@@ -20,6 +20,9 @@ This feature establishes the runnable AgentClinic foundation described in Phase
   constitution.
 - **Language:** TypeScript throughout application code.
 - **Styling:** Tailwind CSS for responsive, maintainable utility-based styles.
+- **Responsive behavior:** The home page and shared shell must adapt content
+  layout, spacing, and typography across supported phone, tablet, and desktop
+  viewports without horizontal scrolling.
 - **Home page:** Provide a concise, welcoming landing page with the clinic
   purpose, health status, and non-functional navigation or calls to action for
   future agent, therapy, and appointment areas.
@@ -27,8 +30,9 @@ This feature establishes the runnable AgentClinic foundation described in Phase
   connection must be isolated behind a typed data-access boundary so a
   file-backed or hosted database can be introduced later without coupling the
   UI to the driver.
-- **Validation:** Manual browser validation for the visible health check and
-  keyboard-accessible baseline. Automated tests are deferred for this phase.
+- **Validation:** Use Vitest for automated validation of the health-check and
+  foundation behavior, supplemented by manual browser validation for the
+  visible health check, homepage, and keyboard-accessible baseline.
 - **Audience:** Optimize the foundation for reproducible local setup and
   demonstration use.
 

@@ -11,6 +11,7 @@ The feature can be merged when all of the following are true:
 - The application uses the Next.js App Router and TypeScript without requiring
   a separate frontend server.
 - Tailwind CSS is configured and used for the application styling baseline.
+- `npm test` runs the Vitest suite successfully.
 
 ## SQLite health check
 
@@ -30,8 +31,10 @@ The feature can be merged when all of the following are true:
 
 ## UI and accessibility
 
-- The baseline renders correctly at narrow and wide modern-browser
+- The baseline renders correctly at phone, tablet, and desktop modern-browser
   viewports.
+- The home page adapts its layout, spacing, and typography without horizontal
+  scrolling at supported viewport sizes.
 - All interactive elements are reachable using the keyboard.
 - Focus remains visible while navigating with the keyboard.
 - Text and status information remain understandable without relying on color
